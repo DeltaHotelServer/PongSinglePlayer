@@ -42,13 +42,6 @@ public class MainMenuUI : MonoBehaviour
 
     public void CloseGame()
     {
-        if (Application.isEditor)
-        {
-            EditorApplication.isPlaying = false;
-        }
-        else
-        {
-            Application.Quit();
-        }
+        Application.Quit();
     }
 }

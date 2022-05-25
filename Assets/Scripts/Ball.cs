@@ -4,17 +4,24 @@
 public class Ball : MonoBehaviour
 {
     public float speed = 200f;
-    public new Rigidbody2D rigidbody { get; private set; }
+    private Rigidbody2D rigidbody1;
+
+    public Rigidbody2D Rigidbody { get => rigidbody1; private set => rigidbody1 = value; }
+
+    public Ball(Rigidbody2D rigidbody)
+    {
+        this.Rigidbody = rigidbody;
+    }
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        Rigidbody = GetComponent<Rigidbody2D>();
     }
 
     public void ResetPosition()
     {
-        rigidbody.velocity = Vector2.zero;
-        rigidbody.position = Vector2.zero;
+        Rigidbody.velocity = Vector2.zero;
+        Rigidbody.position = Vector2.zero;
     }
 
     public void AddStartingForce()
@@ -28,7 +35,7 @@ public class Ball : MonoBehaviour
                                       : Random.Range(0.5f, 1f);
 
         Vector2 direction = new Vector2(x, y);
-        rigidbody.AddForce(direction * speed);
+        Rigidbody.AddForce(direction * speed);
     }
 
 }
