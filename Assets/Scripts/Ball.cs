@@ -6,6 +6,8 @@ public class Ball : MonoBehaviour
     public float speed = 200f;
     private Rigidbody2D rigidbody1;
 
+    private AudioSource audioSource;
+
     public Rigidbody2D Rigidbody { get => rigidbody1; private set => rigidbody1 = value; }
 
     public Ball(Rigidbody2D rigidbody)
@@ -36,6 +38,18 @@ public class Ball : MonoBehaviour
 
         Vector2 direction = new Vector2(x, y);
         Rigidbody.AddForce(direction * speed);
+    }
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
     }
 
 }
