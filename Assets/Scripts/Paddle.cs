@@ -25,6 +25,6 @@ public class Paddle : MonoBehaviour
     {
         Getrigidbody().velocity = Vector2.zero;
         Getrigidbody().position = new Vector2(Getrigidbody().position.x, 0f);
-    }
 
+    }
 }
