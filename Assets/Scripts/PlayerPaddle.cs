@@ -2,22 +2,8 @@
 
 public class PlayerPaddle : Paddle
 {
-    private AudioSource audioSource;
+    
     public Vector2 direction { get; private set; }
-
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (!audioSource.isPlaying)
-        {
-            audioSource.Play();
-        }
-    }
 
     private void Update()
     {

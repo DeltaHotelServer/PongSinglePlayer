@@ -5,6 +5,20 @@ public class Ball : MonoBehaviour
 {
     public float speed = 200f;
     private Rigidbody2D rigidbody1;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+    }
 
     public Rigidbody2D Rigidbody { get => rigidbody1; private set => rigidbody1 = value; }
 
