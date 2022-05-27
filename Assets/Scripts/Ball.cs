@@ -11,6 +11,7 @@ public class Ball : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
     }
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

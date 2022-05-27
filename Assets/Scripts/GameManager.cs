@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     public Paddle computerPaddle;
     public int computerScore { get; private set; }
+    public int AudioListener { get; private set; }
+
     public Text computerScoreText;
 
     public GameObject GameOverUI;
