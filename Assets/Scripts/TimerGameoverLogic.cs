@@ -33,6 +33,7 @@ public class TimerGameoverLogic : MonoBehaviour
         else
         {
             Destroy(ball);
+            Time.timeScale = 0;
             GameManager.GameOver();
             Debug.Log("GameOver");
         }
