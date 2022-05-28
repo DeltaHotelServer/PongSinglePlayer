@@ -4,8 +4,6 @@ public class ComputerPaddle : Paddle
 {
     public Rigidbody2D ball;
 
-    
-
     private void FixedUpdate()
     {
         // Check if the ball is moving towards the paddle (positive x velocity)
