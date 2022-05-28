@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class TimerGameoverLogic : MonoBehaviour
 {
-    public int countDownStartValue = 60;
+    public int countDownStartValue;
     public Text timerUI;
     public GameManager GameManager;
     public GameObject GameObject;
@@ -33,7 +33,6 @@ public class TimerGameoverLogic : MonoBehaviour
         else
         {
             Time.timeScale = 0;
-            Destroy(ball);
             GameManager.GameOver();
             Debug.Log("GameOver");
         }

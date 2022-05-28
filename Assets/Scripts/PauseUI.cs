@@ -10,6 +10,7 @@ public class PauseUI : MonoBehaviour
     private void Awake()
     {
         PauseMenu.SetActive(false);
+        Time.timeScale = 1;
     }
 
     private void PauseGame()

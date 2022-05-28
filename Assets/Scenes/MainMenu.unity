@@ -219,16 +219,16 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1316590435636379216}
   - {fileID: 840276263}
   - {fileID: 400353669}
+  - {fileID: 1316590435636379216}
   m_Father: {fileID: 1251847470}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56, y: -17}
-  m_SizeDelta: {x: 456.2, y: 100}
+  m_AnchoredPosition: {x: 56, y: -12.24}
+  m_SizeDelta: {x: 456.2, y: 90.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158657627
 MonoBehaviour:
@@ -263,6 +263,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 158657626}
     m_Modifications:
+    - target: {fileID: 725021823014275787, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 780558079134774608, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_Name
       value: Highscore Enty UI (2)
@@ -277,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_AnchorMax.x
@@ -513,8 +517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 74, y: 94}
-  m_SizeDelta: {x: 419.2, y: 82.68}
+  m_AnchoredPosition: {x: 55.75001, y: 94}
+  m_SizeDelta: {x: 455.7, y: 82.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &487550688
 MonoBehaviour:
@@ -570,7 +574,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -973,6 +977,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 158657626}
     m_Modifications:
+    - target: {fileID: 725021823014275787, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 780558079134774608, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_Name
       value: Highscore Enty UI (1)
@@ -987,7 +995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1031,15 +1039,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1528,6 +1536,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 158657626}
     m_Modifications:
+    - target: {fileID: 725021823014275787, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 780558079134774608, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_Name
       value: Highscore Enty UI
@@ -1542,7 +1554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1586,15 +1598,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5353528587522471509, guid: 35fb2cb81dbc90f4a85a58ec8263d468, type: 3}
       propertyPath: m_AnchoredPosition.x
