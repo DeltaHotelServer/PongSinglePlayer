@@ -8,6 +8,7 @@ TagManager:
   - Goal
   - Line
   - ComputerPaddle
+  - Wall
   layers:
   - Default
   - TransparentFX

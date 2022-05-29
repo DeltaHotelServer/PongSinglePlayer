@@ -65,9 +65,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) {
+        /*if (Input.GetKeyDown(KeyCode.R)) {
             NewGame();
-        }
+        }*/
     }
 
     public void NewGame()

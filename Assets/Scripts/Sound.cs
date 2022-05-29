@@ -18,5 +18,10 @@ public class Sound : MonoBehaviour
         {
             audioSource.Play();
         }
+        
+        if (collision.gameObject.CompareTag("ComputerPaddle"))
+        {
+            audioSource.Play();
+        }
     }
 }
