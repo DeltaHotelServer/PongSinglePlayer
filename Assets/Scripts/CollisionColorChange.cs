@@ -8,12 +8,20 @@ public class CollisionColorChange : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Paddle"))
         {
-            Debug.Log("It's ALIVE and red");
+            //Debug.Log("It's ALIVE and red");
             transform.GetComponent<Renderer>().material.color = Color.red;
         }
-        else
+        if (collision.gameObject.CompareTag("ComputerPaddle"))
         {
+            //Debug.Log("It's ALIVE and red");
+            transform.GetComponent<Renderer>().material.color = Color.green;
+        }
+
+        if (collision.gameObject.CompareTag("Goal"))
+        {
+            //Debug.Log("Oal");
             transform.GetComponent<Renderer>().material.color = Color.white;
         }
+
     }
 }

@@ -9,17 +9,17 @@ public class Ball : MonoBehaviour
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
     }
     
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!audioSource.isPlaying)
         {
             audioSource.Play();
         }
-    }
+    }*/
 
     public Rigidbody2D Rigidbody { get => rigidbody1; private set => rigidbody1 = value; }
 
