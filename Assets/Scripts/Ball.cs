@@ -19,6 +19,10 @@ public class Ball : MonoBehaviour
         {
             audioSource.Play();
         }
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            sh.PlayWallSound();
+        }
     }
 
     public Rigidbody2D Rigidbody { get => rigidbody1; private set => rigidbody1 = value; }

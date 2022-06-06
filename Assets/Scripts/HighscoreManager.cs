@@ -60,7 +60,7 @@ public class HighscoreManager : MonoBehaviour
         }
 
         var json = File.ReadAllText(HighsorceFilePath);
-        var highscoreContainer = JsonUtility.FromJson<HighscoreContainer>(json);
+        var highscoreContainer = JsonUtility.FromJson<HighscoreContainer>(JsonUtility);
 
         if (highscoreContainer == null && HighscoreContainer.Highscore == null)
         {

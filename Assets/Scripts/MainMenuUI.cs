@@ -21,6 +21,8 @@ public class MainMenuUI : MonoBehaviour
 
     private void ShowHighscores()
     {
+        //Überprüfen ob ein Highscore eingetragen ist und ein eintrag vorher löschen
+        //Check whether a high score is entered and delete an entry beforehand
         for (var i = HighscoreEntries.transform.childCount -1; i >= 0; i--)
         {
             var child = HighscoreEntries.transform.GetChild(i);
@@ -28,6 +30,8 @@ public class MainMenuUI : MonoBehaviour
         }
         var highscroes = HighscoreManager.List();
 
+        //Highscore liste landen und anzeigen
+        //landing and displaying the high score list
         foreach (var highscore in highscroes)
         {
             var highscoreEntry = Instantiate(HighscoreEntryUiPrefab, HighscoreEntries.transform);
@@ -35,6 +39,9 @@ public class MainMenuUI : MonoBehaviour
             textMeshPro.text = $"{highscore.Score} - {highscore.Name}";
         }
     }
+
+    //Scene laden und beenden
+    //Load scene and exit
     public void StartGame()
     {
         SceneManager.LoadScene("Pong");

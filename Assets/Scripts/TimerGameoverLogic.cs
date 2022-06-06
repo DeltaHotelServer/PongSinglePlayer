@@ -22,11 +22,16 @@ public class TimerGameoverLogic : MonoBehaviour
 
     public void countDownTimer()
     {
-        if(countDownStartValue > 0)
+        if (countDownStartValue > 0)
         {
             TimeSpan timeSpan = TimeSpan.FromSeconds(countDownStartValue);
+<<<<<<< Updated upstream:Assets/Scripts/TimerGameoverLogic.cs
             timerUI.text = "Timer: " + timeSpan.Minutes + ":" + timeSpan.Seconds;  
             Debug.Log("Timer :" + countDownStartValue);
+=======
+            timerUI.text = "Timer: " + timeSpan.Minutes + ":" + timeSpan.Seconds;
+            //Debug.Log("Timer :" + countDownStartValue);
+>>>>>>> Stashed changes:Assets/Scripts/Manager/TimerGameoverLogic.cs
             countDownStartValue--;
             Invoke("countDownTimer", 1.0f);
         }
@@ -36,11 +41,5 @@ public class TimerGameoverLogic : MonoBehaviour
             GameManager.GameOver();
             Debug.Log("GameOver");
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
