@@ -26,7 +26,7 @@ public class TimerGameoverLogic : MonoBehaviour
         {
             TimeSpan timeSpan = TimeSpan.FromSeconds(countDownStartValue);
             timerUI.text = "Timer: " + timeSpan.Minutes + ":" + timeSpan.Seconds;  
-            Debug.Log("Timer :" + countDownStartValue);
+            //Debug.Log("Timer :" + countDownStartValue);
             countDownStartValue--;
             Invoke("countDownTimer", 1.0f);
         }
@@ -34,7 +34,7 @@ public class TimerGameoverLogic : MonoBehaviour
         {
             Time.timeScale = 0;
             GameManager.GameOver();
-            Debug.Log("GameOver");
+            //Debug.Log("GameOver");
         }
     }
 

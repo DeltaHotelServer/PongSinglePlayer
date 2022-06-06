@@ -7,19 +7,30 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rigidbody1;
     private AudioSource audioSource;
 
+    private SoundHandler sh;
+
     private void Start()
     {
         //audioSource = GetComponent<AudioSource>();
+        sh = GetComponent<SoundHandler>();
     }
     
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!audioSource.isPlaying)
+        if (collision.gameObject.CompareTag("Paddle"))
         {
-            audioSource.Play();
+            sh.PlayPaddleSound();
         }
-    }*/
+        if (collision.gameObject.CompareTag("ComputerPaddle"))
+        {
+            sh.PlayPaddleSound();
+        }
+        if (collision.gameObject.CompareTag("Goal"))
+        {
+            sh.PlayGoalSound();
+        }
+    }
 
     public Rigidbody2D Rigidbody { get => rigidbody1; private set => rigidbody1 = value; }
 
