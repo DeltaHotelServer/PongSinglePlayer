@@ -14,7 +14,6 @@ public class Ball : MonoBehaviour
         //audioSource = GetComponent<AudioSource>();
         sh = GetComponent<SoundHandler>();
     }
-    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -29,6 +28,10 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.CompareTag("Goal"))
         {
             sh.PlayGoalSound();
+        }
+        if(collision.gameObject.CompareTag("Wall"))
+        {
+            sh.PlayWallSound();
         }
     }
 
@@ -63,5 +66,5 @@ public class Ball : MonoBehaviour
         Vector2 direction = new Vector2(x, y);
         Rigidbody.AddForce(direction * speed);
     }
-
+    
 }

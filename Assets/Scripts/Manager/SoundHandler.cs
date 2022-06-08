@@ -9,13 +9,15 @@ public class SoundHandler : MonoBehaviour
 
     public AudioSource paddelSound;
     public AudioSource goalSound;
+    public AudioSource wallSound;
 
     [SerializeField]
     private void Start()
     {
         AudioSource audioSource1 = GetComponent<AudioSource>();
 
-        paddelSound = mySounds[1];
+        paddelSound = mySounds[0];
+        goalSound = mySounds[1];
         goalSound = mySounds[2];
     }
 
@@ -29,6 +31,9 @@ public class SoundHandler : MonoBehaviour
         goalSound.Play();
     }
 
-
+    public void PlayWallSound()
+    {
+        wallSound.Play();
+    }
 
 }

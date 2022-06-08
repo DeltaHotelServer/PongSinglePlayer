@@ -4,28 +4,17 @@ using UnityEngine;
 
 public class AudioMute : MonoBehaviour
 {
-    public AudioSource audioSource;
-
-    private void Awake()
-    {
-        //DontDestroyOnLoad(transform.gameObject);
-    }
-
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    public AudioListener audioListener;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            audioSource.volume = 0;
+            audioListener.enabled = false;
         }
         if (Input.GetKeyDown(KeyCode.N))
         {
-            audioSource.volume = 1;
+            audioListener.enabled = true;
         }
     }
 }
