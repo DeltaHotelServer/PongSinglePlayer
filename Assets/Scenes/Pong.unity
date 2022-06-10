@@ -1411,9 +1411,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 881385218}
+  - component: {fileID: 881385219}
   - component: {fileID: 881385221}
   - component: {fileID: 881385220}
-  - component: {fileID: 881385219}
   m_Layer: 5
   m_Name: UITimer Text
   m_TagString: Untagged
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57113a3f94f3fdb4590da06c37687d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDownStartValue: 30
+  countDownStartValue: 20
   timerUI: {fileID: 881385220}
   GameManager: {fileID: 1973989815}
   GameObject: {fileID: 1538271071}

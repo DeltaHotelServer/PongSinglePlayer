@@ -24,7 +24,7 @@ public class HighscoreManager : MonoBehaviour
     }
 
     private const string FileName = "highscore.json";
-    private const int MaxHighscoes = 2;
+    private const int MaxHighscoes = 5;
 
     private string HighsorceFilePath => Path.Combine(Application.persistentDataPath, FileName);
 
