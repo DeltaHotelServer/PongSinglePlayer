@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57113a3f94f3fdb4590da06c37687d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDownStartValue: 20
+  countDownStartValue: 30
   timerUI: {fileID: 881385220}
   GameManager: {fileID: 1973989815}
   GameObject: {fileID: 1538271071}
